@@ -3,6 +3,8 @@
 Link For the PS-1: https://zerufinance.notion.site/Problem-statement-1-2300a8e4815880bc86b5ddc97b3d8cfd
 ### Credit Score for Aave V2 Wallet Scoring Model
 
+_NOTE: The code is worked on Google Colab_
+
 #### Overview
 This document details the scoring logic for an unsupervised machine learning model designed to assign credit scores ranging from 0 to 1000 to wallets interacting with the Aave V2 protocol. The primary objective is to evaluate historical transaction behavior, rewarding responsible actions such as consistent deposits and timely repayments while penalizing risky or exploitative behaviors like frequent liquidations or excessive borrowing without repayment. Given the absence of ground-truth labels, this unsupervised approach infers creditworthiness from transaction patterns, making it suitable for the provided 100K transaction dataset. The model’s design ensures it can scale effectively and provide actionable insights into wallet reliability.
 
