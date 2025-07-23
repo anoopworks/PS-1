@@ -12,6 +12,6 @@ The hybrid model, combining Isolation Forest for anomaly detection and K-Means f
 With 100K records, feature engineering (e.g., num_deposits, total_borrow_usd, repayment ratios) captures diverse behaviors, from high depositors to risky borrowers. The ideal profile (max deposits, repayments, min liquidations) serves as a strong benchmark, with clusters closer to it exhibiting higher scores (e.g., 800–1000). Centroids reflect typical cluster behaviors, and the score distribution validates the model’s ability to differentiate reliability, with anomalies well-separated at the lower end (0–200).
 
 #### Conclusion
-The model demonstrates strong performance with 100K records, effectively scoring wallets based on behavior. The wallets coming under 0 - 170 (approx.) are considered anomalous and the wallets in range 600 - 1000 are considered non-anamolous (normal).
+The model demonstrates strong performance with 100K records, effectively scoring wallets based on behavior. The wallets coming under 0 - 200 are considered anomalous and the wallets in range 600 - 1000 are considered non-anamolous (normal).
 
 ---
