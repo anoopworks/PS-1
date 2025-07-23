@@ -11,7 +11,7 @@ The hybrid model, combining Isolation Forest for anomaly detection and K-Means f
 #### Data Insights
 With 100K records, feature engineering (e.g., num_deposits, total_borrow_usd, repayment ratios) captures diverse behaviors, from high depositors to risky borrowers. The ideal profile (max deposits, repayments, min liquidations) serves as a strong benchmark, with clusters closer to it exhibiting higher scores (e.g., 800–1000). Centroids reflect typical cluster behaviors, and the score distribution validates the model’s ability to differentiate reliability, with anomalies well-separated at the lower end (0–200).
 
-#### Limitations and Recommendations
-Despite good performance, the model may benefit from refining the contamination rate (e.g., 0.05–0.15) or cluster number (e.g., 3–6) for precision. Outliers in large datasets could skew PCA visualization, suggesting weighted features (e.g., emphasizing repayments). Recommendations include ongoing validation with new data, adding time-based metrics (e.g., repayment speed), and exploring non-linear scoring to enhance granularity, ensuring long-term robustness and adaptability.
+#### Conclusion
+The model demonstrates strong performance with 100K records, effectively scoring wallets based on behavior, though minor tuning could enhance precision. Ongoing validation will ensure its continued reliability in assessing wallet trustworthiness.
 
 ---
